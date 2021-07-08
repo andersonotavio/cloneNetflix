@@ -1,0 +1,159 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elementos Principais*/
+body{
+  background: var(--preto);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+body .main-photo{
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/images/fundo_jaspion.jpg');
+
+  height: 500px;
+  background-size: cover;
+
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header .logo-menu{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  
+}
+
+header .logo{
+  font-family: 'Bebas Neue', cursive;
+  color: var(--vermelho);
+  font-size: 40px;
+  margin-left: 5px;
+  margin-right: 2rem;
+}
+
+[data-menu="button"]{
+  display: none;
+}
+
+header .nav ul{
+ display: flex;
+}
+
+header .nav li{
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.nav .ativo{
+  color: #fff;
+}
+
+
+header .menu-icons i{
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+header nav a:hover{
+  color: #fff;
+}
+
+/* Filme principal*/
+
+.filme-principal{
+  font-size: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.filme-principal .titulo{
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: var(--vermelho);
+  
+}
+
+.filme-principal .descricao{
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.botao-play{
+  background-color: #fff;
+  border: none;
+  color: #000;
+
+  padding: 15px 30px;
+  margin-right: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s ease all;
+}
+
+.botao{
+  background-color: #4948478a;
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s ease all;
+}
+.botao:hover{
+  background-color: #141414;
+  color:#fff;
+  
+}
+.botao i{
+  margin-right: 10px;
+}
+
+.container{
+  margin-left: 20px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+.box-filmes{
+  height: 100%;
+  width: 100%;
+  display: block;
+  
+}
+.carrousel-filmes{
+  margin-top: 5px;
+  
+}
+
+

@@ -1,0 +1,79 @@
+@media (max-width: 375px){
+  header .logo{
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media  (max-width: 700px){
+  .menu-icons{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .menu-icons i{
+    margin-top: 10px;
+  }
+
+  main .container .titulo{
+    font-size: 35px;
+    
+  }
+  main .container .descricao{
+    font-size: 13px;
+  }
+
+  .botao{
+    margin-top: 5px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  [data-menu="list"]{
+   position: absolute;
+   width: 90px;
+   
+   z-index: 200;
+   top: 0;
+   padding: 60px 0 20px 5px;
+   transition: 0.5s;
+  }
+
+  header .nav ul{
+    display: none;
+  }
+  header .nav ul.active{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  header .nav ul.active li{
+    margin-top: 5px;
+  }
+
+  [data-menu="button"]{
+    display: block;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    z-index: 300;
+  }
+
+  button i{
+    margin-left: 5px;
+  }
+  
+
+ 
+}
+
+@media  (min-width: 1000px){
+  .filme-principal .descricao{
+    width: 50%;
+  }
+ 
+
+}
